@@ -1,0 +1,29 @@
+
+
+<app-navbar></app-navbar>
+<div class="tabla">
+  <div>
+    <button routerLink="/formtask">Aggiungi Task</button>
+  </div>
+  <table>
+    <tbody>
+      <tr>
+        <th>Titolo</th>
+        <th>Descrizione</th>
+        <th>Stato</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor=" let item of (dati$ | async)">
+        <td>{{item.title}}</td>
+        <td>{{ item.description}}</td>
+        <td >3</td>
+        <td><span>Modifica</span> | <span (click)="delete(item.id)">Eliminar</span>  </td>
+      </tr>
+      <tr>
+        <td>
+          Uppssss !!!! Non ci sono dati
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

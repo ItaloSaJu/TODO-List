@@ -1,0 +1,90 @@
+
+.container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-iz{
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-de{
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-bacheca{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tabla{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  gap: 80px;
+}
+
+table{
+  width: 70%;
+  border: 1px solid rgba(82, 82, 82, 0.58);
+}
+
+
+
+
+tbody{
+  border: 1px solid rgba(82, 82, 82, 0.58);
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.init, .completare, .complete{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+tr{
+  width: 200px;
+}
+caption{
+  border: 1px solid rgba(82, 82, 82, 0.58);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+td{
+  border: 1px solid rgba(82, 82, 82, 0.58);
+  width: 200px;
+  text-align: center;
+}
+
+.grey {
+  background-color: rgba(82, 82, 82, 0.58);
+
+}
+
+

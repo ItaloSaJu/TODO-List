@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+
+<div class="formModal" >
+
+
+  <form action="">
+    {{taskForm | json}}
+      <div  class="divisore">
+        <label for="text" > Title : </label>
+        <input type="text" name="title" [(ngModel)]="taskForm.title"  placeholder="title">
+      </div>
+      <div  class="divisore">
+        <label for="text"> descrizione : </label>
+        <input type="text" name="descrizione" [(ngModel)]="taskForm.description"  placeholder="descrizione">
+      </div>
+      <div  class="divisore">
+        <label for="text"> Stato: </label>
+        <input type="number" name="eta"   placeholder="totale">
+      </div>
+      <button (click)="addData()">Salva</button>
+    </form>
+</div>

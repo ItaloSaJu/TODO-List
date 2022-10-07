@@ -1,0 +1,48 @@
+button{
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.tabla{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.Aggiungere{
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+
+}
+
+table{
+  width: 70%;
+
+}
+th{
+  border: 1px solid black;
+  width: 200px;
+}
+caption{
+  border: 1px solid black;
+  width: 99.5%;
+  height: 20px;
+  margin-top: 30px;
+}
+td{
+  border: 1px solid black;
+  width: 200px;
+  text-align: center;
+}
+
+.grey {
+  background-color: grey;
+
+}
