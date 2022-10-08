@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { taskForm } from 'src/app/models/taskForm';
 
 @Component({
@@ -8,7 +8,7 @@ import { taskForm } from 'src/app/models/taskForm';
 })
 export class TaskFormComponent implements OnInit {
 
-  taskForm : taskForm = new taskForm()
+  @Input() taskForm : taskForm = new taskForm()
   @Output() task = new EventEmitter<taskForm>()
 
   constructor() { }
@@ -20,7 +20,8 @@ export class TaskFormComponent implements OnInit {
 
   addData(){
     this.task.emit(this.taskForm)
+    console.log(this.taskForm)
   }
-  https://app.box.com/s/jaryhgb75kyn4ci9u40dbcg1b7whidag/file/1033181878180
+
 
 }

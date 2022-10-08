@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { TaskFormComponent } from './home/task/task-form/task-form.component';
+import { TaskFormPageComponent } from './home/task/task-form-page/task-form-page.component';
 import { TaskComponent } from './home/task/task/task.component';
+import { ProgettiComponent } from './progetti/progetti.component';
 
 const routes: Routes = [
   {
@@ -14,8 +15,16 @@ const routes: Routes = [
     component : TaskComponent
   },
   {
-    path : "formtask",
-    component : TaskFormComponent
+    path : "taskForm",
+    component : TaskFormPageComponent
+  },
+  {
+    path : "taskForm/:id",
+    component : TaskFormPageComponent
+  },
+  {
+    path : "progetti",
+    component : ProgettiComponent
   }
 ];
 

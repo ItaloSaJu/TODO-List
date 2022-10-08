@@ -14,15 +14,19 @@ export class TaskService {
   }
 
   delete(id:number){
-    return this.http.delete<taskForm[]>(`http://localhost:3000/task/${id}`)
+    return this.http.delete<taskForm>(`http://localhost:3000/task/${id}`)
   }
 
   add(task : taskForm){
-    return this.http.post<taskForm[]>(`http://localhost:3000/task/`, task)
+    return this.http.post<taskForm>(`http://localhost:3000/task/`, task)
   }
 
   update(id:number, task:taskForm){
-    return this.http.post<taskForm[]>(`http://localhost:3000/task/${id}`, task)
+    return this.http.put<taskForm>(`http://localhost:3000/task/${id}`, task)
 
+  }
+
+  findById(id: number) {
+    return this.http.get<taskForm>('http://localhost:3000/task/' + id);
   }
 }

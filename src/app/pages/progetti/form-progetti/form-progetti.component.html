@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<div class="formModal" >
+
+
+  <form action="">
+    {{formProject | json}}
+      <div  class="divisore">
+        <label for="text" > Title : </label>
+        <input type="text" name="title" [(ngModel)]="formProject.nome"  placeholder="title">
+      </div>
+      <div  class="divisore">
+        <label for="text"> descrizione : </label>
+        <input type="range" name="descrizione" [(ngModel)]="formProject.description"  placeholder="descrizione">
+      </div>
+      <button (click)="addData()">Salva</button>
+    </form>
+</div>

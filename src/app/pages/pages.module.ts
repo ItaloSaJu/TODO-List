@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { TaskFormComponent } from './home/task/task-form/task-form.component';
 import { TaskComponent } from './home/task/task/task.component';
 import { FormsModule } from '@angular/forms';
+import { TaskFormPageComponent } from './home/task/task-form-page/task-form-page.component';
+import { ProgettiComponent } from './progetti/progetti.component';
+import { FormProgettiComponent } from './progetti/form-progetti/form-progetti.component';
+import { FormPageProgettiComponent } from './progetti/form-page-progetti/form-page-progetti.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     HomeComponent,
     TaskFormComponent,
-    TaskComponent
+    TaskComponent,
+    TaskFormPageComponent,
+    ProgettiComponent,
+    FormProgettiComponent,
+    FormPageProgettiComponent
 
   ],
   imports: [

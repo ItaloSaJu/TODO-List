@@ -3,7 +3,7 @@
 <app-navbar></app-navbar>
 <div class="tabla">
   <div>
-    <button routerLink="/formtask">Aggiungi Task</button>
+    <button routerLink="/taskForm">Aggiungi Task</button>
   </div>
   <table>
     <tbody>
@@ -17,7 +17,9 @@
         <td>{{item.title}}</td>
         <td>{{ item.description}}</td>
         <td >3</td>
-        <td><span>Modifica</span> | <span (click)="delete(item.id)">Eliminar</span>  </td>
+        <td>
+          <span [routerLink]="'/taskForm/' + item.id">Modifica</span> |
+          <span (click)="delete(item.id)">Eliminar</span>  </td>
       </tr>
       <tr>
         <td>
