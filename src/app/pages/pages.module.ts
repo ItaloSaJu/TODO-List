@@ -11,6 +11,8 @@ import { TaskFormPageComponent } from './home/task/task-form-page/task-form-page
 import { ProgettiComponent } from './progetti/progetti.component';
 import { FormProgettiComponent } from './progetti/form-progetti/form-progetti.component';
 import { FormPageProgettiComponent } from './progetti/form-page-progetti/form-page-progetti.component';
+import { RegistratiComponent } from './registrati/registrati.component';
+import { NgIfPipe } from '../pipe/ng-if.pipe';
 
 
 @NgModule({
@@ -22,7 +24,11 @@ import { FormPageProgettiComponent } from './progetti/form-page-progetti/form-pa
     TaskFormPageComponent,
     ProgettiComponent,
     FormProgettiComponent,
-    FormPageProgettiComponent
+    FormPageProgettiComponent,
+    RegistratiComponent,
+    NgIfPipe
+
+
 
   ],
   imports: [

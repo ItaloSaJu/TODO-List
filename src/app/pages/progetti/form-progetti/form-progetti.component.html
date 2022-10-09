@@ -11,7 +11,7 @@
       </div>
       <div  class="divisore">
         <label for="text"> descrizione : </label>
-        <input type="range" name="descrizione" [(ngModel)]="formProject.description"  placeholder="descrizione">
+        <textarea   size="15" name="descrizione" [(ngModel)]="formProject.description" rows="20" cols="80" placeholder="descrizione"></textarea>
       </div>
       <button (click)="addData()">Salva</button>
     </form>

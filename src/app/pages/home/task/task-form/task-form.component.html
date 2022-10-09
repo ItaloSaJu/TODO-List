@@ -14,8 +14,13 @@
         <input type="text" name="descrizione" [(ngModel)]="taskForm.description"  placeholder="descrizione">
       </div>
       <div  class="divisore">
-        <label for="text"> Stato: </label>
-        <input type="number" name="eta"   placeholder="totale">
+        <label for="text"> Status: </label>
+        <select name="status" id="" [(ngModel)]="taskForm.status">
+          <option value="pending" >-- Select --</option>
+          <option value="pending" >Pending</option>
+          <option value="in progress" >In Progress</option>
+          <option value="done" >Done</option>
+        </select>
       </div>
       <button (click)="addData()">Salva</button>
     </form>

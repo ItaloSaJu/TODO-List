@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { taskForm } from 'src/app/models/taskForm';
+import { TaskService } from 'src/app/servizi/task.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  pending : taskForm[] = []
+  done : taskForm[] = []
+  inprogress : taskForm[] = []
+
+
+  constructor(private TaskService : TaskService) { }
 
   ngOnInit(): void {
+    this.TaskService.getAll().subscribe(res => {
+      if(this.pending != undefined){
+        this.pending = res.filter(x => x.status == 'pending' )
+        console.log(this.pending);
+      }
+    }
+    )
+    this.TaskService.getAll().subscribe(res => {
+      if(this.done != undefined){
+        this.done = res.filter(x => x.status == 'done' )
+        console.log(this.done);
+      }
+    }
+    )
+    this.TaskService.getAll().subscribe(res => {
+      if(this.inprogress != undefined){
+        this.inprogress = res.filter(x => x.status == 'in progress' )
+        console.log(this.inprogress);
+      }
+    }
+    )
+
+
   }
+
+
 
 }

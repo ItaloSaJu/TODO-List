@@ -1,25 +1,20 @@
 <app-navbar></app-navbar>
 
 <div class="container">
-  <div class="container-iz">
+   <div class="container-iz">
     <table class="tabla-iz">
       <caption>Task del giorno</caption>
       <tbody class="bod">
-        <tr>
-          <td>Emil</td>
+        <tr *ngFor="let item of pending" >
+          <td>{{item.title}}</td>
         </tr>
-        <tr>
-          <td>Emil</td>
+        <tr *ngFor="let item of done">
+          <td>{{item.title}}</td>
         </tr>
-        <tr>
-          <td>Emil</td>
+        <tr *ngFor="let item of inprogress">
+          <td>{{item.title}}</td>
         </tr>
-        <tr>
-          <td>Emil</td>
-        </tr>
-        <tr>
-          <td>Emil</td>
-        </tr>
+
       </tbody>
     </table>
   </div>
@@ -30,20 +25,20 @@
         <table class="tabla">
           <div class="init">
             <tbody>Task da iniziare</tbody>
-            <tr>
-              <td>Fare Compiti</td>
+            <tr *ngFor="let item of pending" >
+              <td>{{item.title}}</td>
             </tr>
           </div>
           <div class="completare">
             <tbody>Task da completare</tbody>
-            <tr>
-              <td>Pulire casa</td>
+            <tr *ngFor="let item of done">
+              <td>{{item.title}}</td>
             </tr>
           </div>
           <div class="complete">
-            <tbody>Task da completato</tbody>
-            <tr>
-              <td>Fare il colloquio</td>
+            <tbody>Task Completati</tbody>
+            <tr *ngFor="let item of inprogress">
+              <td>{{item.title}}</td>
             </tr>
           </div>
         </table>

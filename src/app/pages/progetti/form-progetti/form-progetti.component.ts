@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { project } from 'src/app/models/project';
 
 @Component({
@@ -8,7 +8,7 @@ import { project } from 'src/app/models/project';
 })
 export class FormProgettiComponent implements OnInit {
 
-  formProject : project = new project
+  @Input() formProject : project = new project()
   @Output() emitProject = new EventEmitter<project>()
   constructor() { }
 
@@ -18,6 +18,7 @@ export class FormProgettiComponent implements OnInit {
 
   addData(){
     this.emitProject.emit(this.formProject)
+    console.log(this.formProject)
   }
 
 }

@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <div class="container">
-  <button>Aggungi</button>
+  <button routerLink="/progettiForm">Aggungi</button>
   <table>
     <thead>
       <th>Nome</th>
@@ -8,10 +8,12 @@
       <th>Edita</th>
     </thead>
     <tbody>
-      <tr>
-        <td>progetto 1</td>
-        <td>description del progetto</td>
-        <td><button>Modifica</button>  |  <button>Elimina</button></td>
+      <tr *ngFor="let item of (project$ |async)">
+        <td>{{item.nome}}</td>
+        <td>{{item.description}}</td>
+        <td>
+          <button [routerLink]="'/progettiForm/' + item.id">Modifica</button>  |
+          <button (click)="delete(item.id)">Elimina</button></td>
       </tr>
     </tbody>
   </table>

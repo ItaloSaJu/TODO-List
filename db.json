@@ -2,44 +2,57 @@
   "task": [
     {
       "id": 4,
-      "title": "Complare taskaaaaaaaaaaa",
-      "description": "Completare task per lunedi"
+      "title": "aaaaaaaaaaaaa",
+      "description": "Completare task per lunedi",
+      "status": "pending"
     },
     {
       "id": 5,
       "title": "Complare task",
-      "description": "Completare task per lunedi"
+      "description": "Completare task per lunedi",
+      "status": "in progress"
     },
     {
       "id": 6,
-      "title": "Complare task",
-      "description": "Completare task per lunedi"
+      "title": "aaaaaaaaaaaaaaaaaaaa",
+      "description": "Completare task per lunedi",
+      "status": "pending"
     },
     {
       "id": 7,
       "title": "Complare task",
-      "description": "Completare task per lunedi"
+      "description": "Completare task per lunedi",
+      "status": "done"
     },
     {
       "id": 8,
-      "title": "Complare task",
-      "description": "Completare task per lunedi"
+      "title": "aaaaaaaaaaaaaaaaaaaaaa",
+      "description": "Completare task per lunedi",
+      "status": "pending"
     },
     {
-      "title": "wwwwwwwwwwwwww",
-      "description": "wwwwwwwww",
+      "title": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "description": "asdasdasdasd",
+      "status": "pending",
       "id": 9
     },
     {
-      "title": "vdxvdxv<<<<<<<<<<<<<<",
-      "description": "dxvdxvxdv",
+      "title": "ssssssssssssssssssssssssss",
+      "description": "sssssssssssssssssssssss",
+      "status": "in progress",
       "id": 10
+    },
+    {
+      "title": "dddddddddddddddddddd",
+      "description": "dddddddddddddddddddd",
+      "status": "done",
+      "id": 11
     }
   ],
   "project": [
     {
       "id": 1,
-      "nome": "Complare taskaaaaaaaaaaa",
+      "nome": "Complare taskaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
       "description": "Completare task per lunedi"
     },
     {
@@ -53,14 +66,9 @@
       "description": "Completare task per lunedi"
     },
     {
-      "id": 4,
-      "nome": "Complare taskaaaaaaaaaaa",
-      "description": "Completare task per lunedi"
-    },
-    {
-      "id": 5,
-      "nome": "Complare taskaaaaaaaaaaa",
-      "description": "Completare task per lunedi"
+      "nome": "zsd",
+      "description": "zds",
+      "id": 4
     }
   ],
   "profile": {

@@ -57,6 +57,7 @@ tbody{
   flex-direction: column;
 }
 .init, .completare, .complete{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -66,7 +67,8 @@ tbody{
 }
 
 tr{
-  width: 200px;
+  width: 100%;
+  height: auto;
 }
 caption{
   border: 1px solid rgba(82, 82, 82, 0.58);
@@ -79,6 +81,8 @@ caption{
 td{
   border: 1px solid rgba(82, 82, 82, 0.58);
   width: 200px;
+  height: auto;
+  display: block;
   text-align: center;
 }
 
