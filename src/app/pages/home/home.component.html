@@ -1,49 +1,63 @@
 <app-navbar></app-navbar>
 
 <div class="container">
-   <div class="container-iz">
-    <table class="tabla-iz">
-      <caption>Task del giorno</caption>
-      <tbody class="bod">
-        <tr *ngFor="let item of pending" >
-          <td>{{item.title}}</td>
-        </tr>
-        <tr *ngFor="let item of done">
-          <td>{{item.title}}</td>
-        </tr>
-        <tr *ngFor="let item of inprogress">
-          <td>{{item.title}}</td>
-        </tr>
-
-      </tbody>
-    </table>
+  <div class="aggiungi">
+    <button>Aggiungi Task</button>
   </div>
-  <div class="container-de">
-    <div class="container-bacheca">
-      <table>
-        <caption >Bacheca</caption>
-        <table class="tabla">
-          <div class="init">
-            <tbody>Task da iniziare</tbody>
-            <tr *ngFor="let item of pending" >
-              <td>{{item.title}}</td>
-            </tr>
-          </div>
-          <div class="completare">
-            <tbody>Task da completare</tbody>
-            <tr *ngFor="let item of done">
-              <td>{{item.title}}</td>
-            </tr>
-          </div>
-          <div class="complete">
-            <tbody>Task Completati</tbody>
-            <tr *ngFor="let item of inprogress">
-              <td>{{item.title}}</td>
-            </tr>
-          </div>
-        </table>
-      </table>
+  <div class="divisore">
+    <div class="pending">
+      <h1 class="title-pending">Pending</h1>
+      <div class="card" *ngFor="let item of pending | ngIf">
+        <h2>Title:</h2>
+        <p>{{item.title}}</p>
+        <h2>description:</h2>
+        <p>{{item.description}}</p>
+        <h2>Data : </h2>
+        <p>20 / 10 / 2022</p>
+      </div>
+    </div>
+    <div class="pending">
+      <h1 class="title-completare">Da Completare</h1>
+
+      <div class="card" *ngFor="let item of inprogress  ">
+        <h2>Title:</h2>
+        <p>{{item.title }}</p>
+        <h2>description:</h2>
+        <p>{{item.description}}</p>
+        <h2>Data : </h2>
+        <p>20 / 10 / 2022</p>
+      </div>
+    </div>
+    <div class="pending">
+      <h1 class="title-completato">Completati</h1>
+      <div class="card" *ngFor="let item of done">
+        <h2>Title:</h2>
+        <p>{{item.title}}</p>
+        <h2>description:</h2>
+        <p>{{item.description}}</p>
+        <h2>Data : </h2>
+        <p>20 / 10 / 2022</p>
+      </div>
     </div>
 
   </div>
+</div>
+<div class="">
+
+  <div class="container-iz">
+   <table class="tabla-iz">
+     <caption>Task del giorno</caption>
+     <tbody class="bod">
+       <tr *ngFor="let item of pending" >
+         <td>{{item.title}}</td>
+       </tr>
+       <tr *ngFor="let item of done">
+         <td>{{item.title}}</td>
+       </tr>
+       <tr *ngFor="let item of inprogress">
+         <td>{{item.title}}</td>
+       </tr>
+     </tbody>
+   </table>
+ </div>
 </div>

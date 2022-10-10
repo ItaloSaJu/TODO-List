@@ -6,12 +6,11 @@ import { taskForm } from '../models/taskForm';
 })
 export class NgIfPipe implements PipeTransform {
 
-  transform(dati$: taskForm, ...args: unknown[]): any {
-    console.log(dati$)
-    if(dati$){
-     // item.filter(d => d.status.pending = d)
-    }
-    return null
+  transform(dati: taskForm[], ...args: unknown[]): any {
+    console.log(dati)
+
+
+    return dati = dati.filter(x => x.status == "pending")
   }
 
 }

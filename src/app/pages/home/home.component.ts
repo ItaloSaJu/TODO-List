@@ -21,21 +21,18 @@ export class HomeComponent implements OnInit {
     this.TaskService.getAll().subscribe(res => {
       if(this.pending != undefined){
         this.pending = res.filter(x => x.status == 'pending' )
-        console.log(this.pending);
       }
     }
     )
     this.TaskService.getAll().subscribe(res => {
       if(this.done != undefined){
         this.done = res.filter(x => x.status == 'done' )
-        console.log(this.done);
       }
     }
     )
     this.TaskService.getAll().subscribe(res => {
       if(this.inprogress != undefined){
         this.inprogress = res.filter(x => x.status == 'in progress' )
-        console.log(this.inprogress);
       }
     }
     )
