@@ -30,11 +30,12 @@ import { NgIfPipe } from '../pipe/ng-if.pipe';
 
 
 
+
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
-    FormsModule
+    FormsModule,
 
   ],
   exports: [
