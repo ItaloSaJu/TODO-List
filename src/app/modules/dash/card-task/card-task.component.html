@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="title">
+    <h1>Tasks</h1>
+    <button>Add Task</button>
+  </div>
+  <div class="con-cards">
+    <div class="con" >
+      <div class="con-title">
+        <h3>To Do</h3>
+        <div class="linea-left"></div>
+      </div>
+      <div class="task" *ngFor="let item of pending">
+        <div class="title-Task">
+          <h4>{{item.title}}</h4>
+        </div>
+        <div class="description">
+          <p>{{item.description}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="con">
+      <div class="con-title">
+        <h3>In Progresso</h3>
+        <div class="linea-centro"></div>
+      </div>
+      <div class="task" *ngFor="let item of progress">
+        <div class="title-Task">
+          <h4>{{item.title}}</h4>
+        </div>
+        <div class="description">
+          <p>{{item.description}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="con">
+      <div class="con-title">
+        <h3>Completato</h3>
+        <div class="linea-right"></div>
+      </div>
+      <div class="task" *ngFor="let item of done">
+        <div class="title-Task">
+          <h4>{{item.title}}</h4>
+        </div>
+        <div class="description">
+          <p>{{item.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

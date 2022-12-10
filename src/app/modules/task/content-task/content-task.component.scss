@@ -1,0 +1,188 @@
+@import "../../../shared/theme/letter";
+.container{
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: scroll;
+  background-color: #F6F8FC;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+      width:10px;
+  }
+  &::-webkit-scrollbar:horizontal {
+      display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 20px;
+      border: 2px solid transparent;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+      background-color: #797979;
+      border-radius: 20px;
+      border: 2px solid #f1f2f3;
+  }
+
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+  }
+
+  .title{
+    width: 96%;
+    height: 12%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 2%;
+    gap: 20px;
+
+    h1{
+      font-size: 20px;
+
+    }
+    button{
+      width: 80px;
+      height: 30px;
+      background: transparent;
+      border-radius: 10px;
+      background-color: rgb(97, 165, 183);
+      border: none;
+      transition: 0.5s;
+      color: white;
+      cursor: pointer;
+
+      &:hover{
+        border: 1px solid grey;
+        background-color: transparent;
+        color: black;
+      }
+    }
+  }
+  .con-cards{
+    width: 100%;
+    height: 88%;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    align-items: start;
+    justify-items: center;
+
+    .con{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 10px;
+
+      .con-title{
+        width: 85%;
+        height: 30px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h3{
+          font-size: 15px;
+        }
+        .linea-left{
+          width: 100%;
+          height: 4px;
+          background-color: red;
+        }
+        .linea-centro{
+          width: 100%;
+          height: 4px;
+          background-color: orange;
+        }
+        .linea-right{
+          width: 100%;
+          height: 4px;
+          background-color: green;
+        }
+      }
+      .task{
+        width: 85%;
+        height: auto;
+        background-color: white;
+        padding: 0 10px;
+        padding-top: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        box-shadow: $shadowCards;
+        border: 1px solid white;
+        cursor: pointer;
+
+        &:hover{
+          border: $boderCard;
+        }
+        .title-Task {
+          h4{
+            font-size: $h4Cards;
+            padding:  0 10px ;
+          }
+        }
+        .description {
+          p{
+            font-size: $pCards;
+            color: gray;
+            padding: 0 10px;
+          }
+        }
+
+        .dati-adi{
+          width: 94%;
+          height: 50px;
+          border-top:  $boderCard ;
+          padding: 0 10px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          gap: 5px;
+
+          .category{
+            display: flex;
+            gap: 5px;
+
+            h5{
+              font-size: $pCards;
+              color: $subTitleCard;
+            }
+            p{
+              font-size: $pCards;
+              color: gray;
+            }
+          }
+          .consegna{
+            display: flex;
+            gap: 5px;
+            h5{
+              font-size: $pCards;
+              color: $subTitleCard;
+            }
+            p{
+              font-size: $pCards;
+              color: gray;
+            }
+        }
+        }
+
+      }
+    }
+  }
+}

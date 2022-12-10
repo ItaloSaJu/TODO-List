@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="title">
+    <h1>Progetti</h1>
+    <button (click)="formPro()">Add Progetto</button>
+  </div>
+  <div class="con-cards">
+      <div class="con-title" *ngFor="let List of List">
+        <a class="button" href="#" (click)="todo(List)">{{List}}</a>
+      </div>
+  </div>
+
+  <div class="con-item">
+
+    <ng-container  *ngIf="listItem === 'To do' ">
+      <div class="task" *ngFor="let item of to">
+        <div class="title-Task">
+          <h4>{{item.title}}</h4>
+        </div>
+        <div class="description">
+          <p>{{item.description}}</p>
+        </div>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="listItem === 'In Progress' ">
+      <div class="task" *ngFor="let item of progress">
+        <div class="title-Task">
+          <h4>{{item.title}}</h4>
+        </div>
+        <div class="description">
+          <p>{{item.description}}</p>
+        </div>
+      </div>
+
+    </ng-container>
+    <ng-container *ngIf="listItem === 'Completato' ">
+      <div class="task" *ngFor="let item of done">
+        <div class="title-Task">
+          <h4>{{item.title}}</h4>
+        </div>
+        <div class="description">
+          <p>{{item.description}}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+

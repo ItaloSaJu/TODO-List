@@ -1,0 +1,10 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(4, 4, 4, 0.076);
+  backdrop-filter: blur(3px);
+}

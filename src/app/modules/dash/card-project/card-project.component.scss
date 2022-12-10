@@ -1,0 +1,153 @@
+@import "../../../shared/theme/letter";
+.container{
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-y: none;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+      width:10px;
+  }
+  &::-webkit-scrollbar:horizontal {
+      display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 20px;
+      border: 2px solid transparent;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+      background-color: #797979;
+      border-radius: 20px;
+      border: 2px solid #f1f2f3;
+  }
+
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+  }
+
+  .title{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1{
+      font-size: 20px;
+
+    }
+    button{
+      width: 90px;
+      height: 30px;
+      background: transparent;
+      border-radius: 10px;
+      background-color: rgb(97, 165, 183);
+      border: none;
+      transition: 0.5s;
+      color: white;
+      cursor: pointer;
+
+      &:hover{
+        border: 1px solid grey;
+        background-color: transparent;
+        color: black;
+      }
+    }
+  }
+  .con-cards{
+    width: 89%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 9px;
+
+      .con-title{
+          width: 90px;
+          height: 30px;
+          background-color: transparent;
+          border: 1px solid grey;
+          font-size: 13px;
+          border-radius: 10px;
+          display: flex;
+          transition: 0.2s;
+          cursor: pointer;
+
+        &:first-child:hover{
+          background-color: red;
+          border: 1px solid red;
+        }
+        &:nth-child(2):hover{
+          background-color: orange;
+          border: 1px solid orange;
+        }
+        &:last-child:hover{
+          background-color: green;
+          border: 1px solid green;
+        }
+        .button{
+          width: 90px;
+          height: 30px;
+          text-decoration: none;
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover{
+            color: white;
+          }
+      }
+    }
+  }
+  .con-item{
+    width: 88%;
+    height: 75%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    .task{
+      width: 94%;
+      height: auto;
+      background-color:  white;
+      padding: $paddingCards;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      border: 1px solid white;
+      box-shadow: $shadowCards;
+
+      &:hover{
+        border: $boderCard;
+      }
+
+
+      .title-Task {
+        h4{
+          font-size: $h4Cards;
+          padding:  0 10px ;
+        }
+      }
+      .description {
+        p{
+          font-size: $pCards;
+          color: gray;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
