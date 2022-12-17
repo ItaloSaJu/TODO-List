@@ -12,4 +12,16 @@ export class ServiceTaskService {
   all(){
     return this.http.get<task[]>('http://localhost:3000/task')
   }
+
+  getId(id:number){
+    return this.http.get<task>('http://localhost:3000/task/'+id)
+  }
+
+  addTask(task: task){
+    return this.http.post<task[]>('http://localhost:3000/task/', task)
+  }
+
+  update(id:number, task:task){
+    return this.http.put<task>(`http://localhost:3000/task/${id}`, task)
+  }
 }

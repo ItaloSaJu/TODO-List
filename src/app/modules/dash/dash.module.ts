@@ -7,7 +7,6 @@ import { NavModule } from "../nav/nav.module";
 import { SidebarModule } from '../sidebar/sidebar.module';
 import { CardTaskComponent } from './card-task/card-task.component';
 import { CardProjectComponent } from './card-project/card-project.component';
-import { FormProjectModule } from 'src/app/shared/form/form-project/form-project.module';
 
 
 @NgModule({
@@ -22,7 +21,6 @@ import { FormProjectModule } from 'src/app/shared/form/form-project/form-project
         DashRoutingModule,
         NavModule,
         SidebarModule,
-        FormProjectModule
     ]
 })
 export class DashModule { }

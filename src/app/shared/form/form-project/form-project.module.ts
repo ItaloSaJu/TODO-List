@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormProComponent } from './form-pro/form-pro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -10,11 +11,13 @@ import { FormProComponent } from './form-pro/form-pro.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule
 
 
   ],
   exports: [
-    FormProComponent
+    FormProComponent,
 
   ]
 })

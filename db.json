@@ -3,173 +3,191 @@
     {
       "id": 1,
       "title": "Fare Matematica",
-      "description":"hacer tarea para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Scuola" ,
+      "description": "hacer tarea para manana que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Scuola",
       "status": "pending"
     },
     {
       "id": 2,
       "title": "Fare i documenti universitari",
-      "description":"hacer tarea para manana que tengor",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer tarea para manana que tengor",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "in progress"
     },
     {
       "id": 3,
       "title": "fare fisica cacolo matematico",
-      "description":"hacer las compras con pollo para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Scuola" ,
+      "description": "hacer las compras con pollo para manana que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Scuola",
       "status": "done"
     },
     {
       "id": 4,
       "title": "Comprare civo gatto vicino a uni",
-      "description":"hacer la cmaa al gato",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer la cmaa al gato",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "done"
     },
     {
       "id": 5,
       "title": "Letteratura",
-      "description":"hacer tarea para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Scuola" ,
+      "description": "hacer tarea para manana que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Scuola",
       "status": "done"
     },
     {
       "id": 6,
       "title": "Lingue e letterature straniere",
-      "description":"hacer tarea para manana que tengor",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer tarea para manana que tengor",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "in progress"
     },
     {
       "id": 7,
       "title": "Quimica",
-      "description":"hacer las compras con pollo para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Scuola" ,
+      "description": "hacer las compras con pollo para manana que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Scuola",
       "status": "pending"
     },
     {
       "id": 7,
       "title": "Mediazione linguistica",
-      "description":"hacer las compras con pollo para manana  muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer las compras con pollo para manana  muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "pending"
     },
     {
       "id": 7,
       "title": "Comprare laptop",
-      "description":"hacer las cna que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Scuola" ,
+      "description": "hacer las cna que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Scuola",
       "status": "pending"
     },
     {
       "id": 8,
       "title": "Plurilinguisticamente ha",
-      "description":"hacer tarea para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer tarea para manana que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "pending"
     }
   ],
   "project": [
     {
       "id": 1,
-      "title": "Fare compiti di casa",
-      "description":"hacer tarea para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Casa" ,
+      "title": "Fare compiti di casa ",
+      "description": "hacer tarea para manana que tengo muchas por hacer",
+      "data": "2020-02-20",
+      "category": "Casas",
       "status": "pending"
     },
     {
       "id": 2,
       "title": "Mediazione linguistica e lingue e letterature",
-      "description":"hacer tarea para manana que tengor",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer tarea para manana que tengor",
+      "data": "2998-02-15",
+      "category": "Università",
       "status": "in progress"
     },
     {
       "id": 3,
-      "title": "Comprar pollo",
-      "description":"hacer las compras con pollo para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Casa" ,
+      "title": "Comprar pollo 3",
+      "description": "hacer las compras con pollo para manana que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Casa",
       "status": "done"
     },
     {
       "id": 4,
       "title": "Comprar civo paer gatto manana",
-      "description":"hacer la cmaa al gato",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer la cmaa al gato",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "done"
     },
     {
       "id": 5,
       "title": "Pulire la cucina",
-      "description":"hacer tarea para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Casa" ,
+      "description": "hacer tarea para manana que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Casa",
       "status": "done"
     },
     {
       "id": 6,
-      "title": "MAtematica",
-      "description":"hacer tarea para manana que tengor",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "title": "Matematica",
+      "description": "hacer tarea para manana que tengor",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "in progress"
     },
     {
       "id": 7,
       "title": "Leggere il libro di cucina",
-      "description":"hacer las compras con pollo para manana que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Casa" ,
+      "description": "hacer las compras con pollo para manana que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Casa",
       "status": "pending"
     },
     {
       "id": 8,
       "title": "Restituire il libro in biblio",
-      "description":"hacer las compras con pollo para manana  muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer las compras con pollo para manana  muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "pending"
     },
     {
       "id": 9,
       "title": "Fare compiti",
-      "description":"hacer las cna que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Casa" ,
+      "description": "hacer las cna que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Casa",
       "status": "pending"
     },
     {
       "id": 10,
       "title": "Lingue",
-      "description":"hacer las compras con pollo para manana  muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Università" ,
+      "description": "hacer las compras con pollo para manana  muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Università",
       "status": "pending"
     },
     {
       "id": 11,
       "title": "Andare all'esselunga e comprare",
-      "description":"hacer las cna que tengo muchas por hacer",
-      "data": "10-10-2023" ,
-      "category" :"Casa" ,
+      "description": "hacer las cna que tengo muchas por hacer",
+      "data": "10-10-2023",
+      "category": "Casa",
       "status": "pending"
+    },
+    {
+      "title": "asssssss",
+      "description": "as",
+      "data": "1212-12-12",
+      "category": "asasasasasas3",
+      "status": "pending",
+      "id": 12
+    },
+    {
+      "title": "121212121221",
+      "description": "12",
+      "data": "1212-12-12",
+      "category": "12",
+      "status": "pending",
+      "id": 13
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }

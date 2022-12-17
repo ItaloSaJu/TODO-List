@@ -1,10 +1,92 @@
 .container{
   width: 100%;
-  height: 100vh;
+  height: 88vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  background-color: rgba(4, 4, 4, 0.076);
-  backdrop-filter: blur(3px);
+  transition: 1s;
+  flex-direction: column;
+
+
+  .form{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .formInput{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        label{
+          font-size: 16px;
+        }
+        input {
+          width: calc(100% - 2%);
+          height: 30px;
+          border: 1px solid grey;
+          transition: 0.2s;
+          outline-style: none;
+          padding-left: 2%;
+        }
+        input:hover{
+          border-top: 1px solid white;
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+          border-bottom: 1px solid black;
+
+        }
+        textarea {
+          width: calc(100% - 2%);
+          border: 1px solid grey;
+          transition: 0.2s;
+          outline-style: none;
+          padding: 5px 5px;
+        }
+
+        .invalid{
+          width: 100%;
+          height: 25px;
+          background-color: rgb(212, 127, 127);
+          color: white;
+          font-size: 13px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid  rgb(212, 127, 127);
+        }
+
+      }
+      button{
+        width: 30%;
+        height: 30px;
+        background-color: transparent;
+        transition: 0.5s;
+        border: 1px solid grey;
+        font-size: 13px;
+        &:hover{
+          background-color: green;
+          border: green;
+          color: white;
+        }
+      }
+
+    }
+
+
+  }
+
+
+
+}
+
+input .ng-invalid .ng-touched{
+  border: solid 1px red !important;
 }

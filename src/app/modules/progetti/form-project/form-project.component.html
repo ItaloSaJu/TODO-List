@@ -4,6 +4,9 @@
 
   </div>
   <div class="con-left">
-    <app-content-project></app-content-project>
+    <app-form-pro
+      [formPro]="dataProject"
+      (newData)="newData($event)"
+    ></app-form-pro>
   </div>
 </div>

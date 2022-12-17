@@ -10,7 +10,6 @@ import { ProjectService } from 'src/app/shared/servizi/project/project.service';
 })
 export class CardProjectComponent implements OnInit {
 
-  form:boolean = true
   constructor(private projectService: ProjectService) { }
 
   to: project[] = []
@@ -48,8 +47,6 @@ export class CardProjectComponent implements OnInit {
     this.listItem = List;
   }
 
-  formPro(){
-    this.form = true
-  }
+
 
 }

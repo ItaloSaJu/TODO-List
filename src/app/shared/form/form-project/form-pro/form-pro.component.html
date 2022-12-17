@@ -1,11 +1,28 @@
 <div class="container">
   <div class="form">
+    <form [formGroup]="form" (ngSubmit)="registerSubmit()">
+      <div class="formInput">
+        <label for="title">Titolo</label>
+        <input type="text" placeholder="Nome della task" name="title" formControlName="title" [(ngModel)]="formPro.title">
+        <div class="invalid" *ngIf="form.get('title')?.invalid && form.get('title')?.touched" >Questo campo è richiesto</div>
+      </div>
+      <div class="formInput">
+        <label for="">Description</label>
+        <textarea rows="4" cols="50" name="description" formControlName="description" placeholder="descrizione del tuo progetto" [(ngModel)]="formPro.description"></textarea>
+        <div class="invalid" *ngIf="form.get('description')?.invalid && form.get('description')?.touched" >Questo campo è richiesto</div>
+      </div>
+      <div class="formInput">
+        <label for="">Date</label>
+        <input type="date"  name="data" formControlName="data" [(ngModel)]="formPro.data">
+        <div class="invalid" *ngIf="form.get('data')?.invalid && form.get('data')?.touched" >Questo campo è richiesto</div>
+      </div>
+      <div class="formInput">
+        <label for="">Categorias</label>
+        <input type="text" placeholder="Diverse task possono avere la stessa categoria" name="category" formControlName="category"
+        [(ngModel)]="formPro.category">
 
-    <form action="">
-      <input type="text" placeholder="Nome">
-      <input type="text" placeholder="Nome">
-      <input type="text" placeholder="Nome">
-      <input type="text" placeholder="Nome">
+      </div>
+      <button [disabled]="form.invalid" (click)="addData()">Salva</button>
     </form>
   </div>
 </div>

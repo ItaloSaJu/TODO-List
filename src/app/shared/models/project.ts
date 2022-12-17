@@ -1,7 +1,7 @@
 export class project {
   id? : number
-  description:String =''
   title: string = ''
+  description:String =''
   data : string = ''
   category : String =''
   public status?: 'pending' | 'in progress' | 'done' = 'pending';

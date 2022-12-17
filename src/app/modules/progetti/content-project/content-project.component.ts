@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Route, Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 import { project } from 'src/app/shared/models/project';
 import { ProjectService } from 'src/app/shared/servizi/project/project.service';
 
@@ -9,12 +11,16 @@ import { ProjectService } from 'src/app/shared/servizi/project/project.service';
 })
 export class ContentProjectComponent implements OnInit {
 
-  constructor(private projectService : ProjectService) { }
+
+  constructor(private projectService : ProjectService,
+              private router: Router) { }
+
   pending : project[]=[]
   progress: project[]=[]
   done: project[]=[]
 
   ngOnInit(): void {
+
 
     this.projectService.all().subscribe(res => {
       if(this.pending != undefined){
@@ -31,6 +37,13 @@ export class ContentProjectComponent implements OnInit {
         this.done = res.filter(x=>x.status == 'done')
       }
     })
+
   }
+
+  formPro(){
+    this.router.navigate(['progetti/progettiform'])
+  }
+
+
 
 }

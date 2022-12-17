@@ -8,7 +8,7 @@ import { NavModule } from './modules/nav/nav.module';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
