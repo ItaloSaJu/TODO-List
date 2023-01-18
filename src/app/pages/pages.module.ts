@@ -13,6 +13,7 @@ import { FormProgettiComponent } from './progetti/form-progetti/form-progetti.co
 import { FormPageProgettiComponent } from './progetti/form-page-progetti/form-page-progetti.component';
 import { RegistratiComponent } from './registrati/registrati.component';
 import { NgIfPipe } from '../pipe/ng-if.pipe';
+import { PruebaHomeComponent } from './login/prueba-home/prueba-home.component';
 
 
 @NgModule({
@@ -26,8 +27,8 @@ import { NgIfPipe } from '../pipe/ng-if.pipe';
     FormProgettiComponent,
     FormPageProgettiComponent,
     RegistratiComponent,
-    NgIfPipe
-
+    NgIfPipe,
+    PruebaHomeComponent
 
 
 

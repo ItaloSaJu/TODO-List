@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input{
+    border: 1px solid grey;
+}
+.con-registrati, .con-login{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+form{
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+    border: 1px solid grey;
+    padding: 30px;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}

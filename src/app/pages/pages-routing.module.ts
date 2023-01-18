@@ -4,6 +4,7 @@ import { GuardRegistratiGuard } from '../guard/guard-registrati.guard';
 import { HomeComponent } from './home/home.component';
 import { TaskFormPageComponent } from './home/task/task-form-page/task-form-page.component';
 import { TaskComponent } from './home/task/task/task.component';
+import { PruebaHomeComponent } from './login/prueba-home/prueba-home.component';
 import { FormPageProgettiComponent } from './progetti/form-page-progetti/form-page-progetti.component';
 import { FormProgettiComponent } from './progetti/form-progetti/form-progetti.component';
 import { ProgettiComponent } from './progetti/progetti.component';
@@ -41,9 +42,13 @@ const routes: Routes = [
   },
   {
     path : "registrati",
-    component : RegistratiComponent,
+    component :RegistratiComponent,
+    //canActivate: [GuardRegistratiGuard]
+  },
+  {
+    path : "pruebaHome",
+    component :PruebaHomeComponent,
     canActivate: [GuardRegistratiGuard]
-
   }
 ];
 
